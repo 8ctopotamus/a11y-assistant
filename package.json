@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "description": "An accessibility widget",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx rollup -c rollup.config.js -w",
+    "build": "npx rollup -c rollup.config.js",
+    "publish": "npm run build && npm publish --access=public",
+    "test": "npx live-server"
   },
   "repository": {
     "type": "git",
