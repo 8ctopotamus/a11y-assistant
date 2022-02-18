@@ -1,6 +1,6 @@
 import { PACKAGE_SLUG } from '../constants'
 import styles from '../css/styles.css'
-
+console.log(styles)
 class A11y {
   els = {}
   menuOpen = false
