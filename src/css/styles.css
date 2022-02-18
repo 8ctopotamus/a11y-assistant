@@ -8,3 +8,8 @@
 #a11y-assistant button {
   cursor: pointer;
 }
+
+.highlight {
+  background-color: yellow !important;
+  color: black !important;
+}
