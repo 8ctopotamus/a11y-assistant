@@ -7,7 +7,7 @@ import { terser } from 'rollup-plugin-terser'
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/index.js',
+    file: 'a11y-widget.min.js',
   },
   plugins: [
     replace({
@@ -20,6 +20,6 @@ export default {
       babelHelpers: 'bundled' 
     }),
     commonjs(),
-    // terser(),
+    terser(),
   ],
 };
