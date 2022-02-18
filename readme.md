@@ -1,2 +1,4 @@
 # A11y-widget
-IMPORTANT: Using this package DOES NOT guarantee your website is ADA-compliant. 
+**IMPORTANT: Using this package does NOT guarantee that your website is ADA-compliant.**
+
+The beginnings of A11y Assistant Widget... check back later!

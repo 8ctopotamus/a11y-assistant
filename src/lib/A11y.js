@@ -1,4 +1,5 @@
 import { PACKAGE_SLUG } from '../constants'
+import styles from '../css/styles.css'
 
 class A11y {
   els = {}
@@ -10,8 +11,10 @@ class A11y {
   init() {
     const menuId = `${PACKAGE_SLUG}-nav`
     const toggleButtonId = `${PACKAGE_SLUG}-toggle-button`
+    this.els.styles = document.createElement('style')
+    this.els.styles.innerText =  styles
     this.els.widget = document.createElement('div')
-    this.els.widget.id = `${PACKAGE_SLUG}-widget`
+    this.els.widget.id = `${PACKAGE_SLUG}`
     this.els.widget.innerHTML = `
       <nav id="${menuId}" style="display: none;">
         <button>Font Size</button>
@@ -26,6 +29,7 @@ class A11y {
     this.els.menu = this.els.widget.querySelector(`#${menuId}`)
     this.els.toggleButton = this.els.widget.querySelector(`#${toggleButtonId}`)
     this.els.toggleButton.addEventListener('click', () => this.toggleMenu())
+    document.head.appendChild(this.els.styles)
     document.body.appendChild(this.els.widget)
   }
 
