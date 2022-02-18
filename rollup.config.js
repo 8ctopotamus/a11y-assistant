@@ -8,7 +8,7 @@ import css from 'rollup-plugin-import-css'
 export default {
   input: 'src/index.js',
   output: {
-    file: 'a11y-widget.min.js',
+    file: 'a11y-assistant.min.js',
   },
   plugins: [
     css(),

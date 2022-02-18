@@ -1,1 +1,1 @@
-export const PACKAGE_SLUG = 'a11y-widget'
+export const PACKAGE_SLUG = 'a11y-assistant'
