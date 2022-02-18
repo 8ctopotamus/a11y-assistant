@@ -30,9 +30,8 @@ class A11y {
         <button>Contrast</button>
       </nav>
       <button id="${toggleButtonId}">Toggle A11y</button>
-    `
+    `    
     this.els.menu = this.els.widget.querySelector(`#${menuId}`)
-
     this.els.toggleButton = this.els.widget.querySelector(`#${toggleButtonId}`)
     this.els.highlightLinksButton = this.els.widget.querySelector(`#${highlightLinksButtonId}`)
 
