@@ -33,8 +33,7 @@ class A11y {
     document.body.appendChild(this.els.widget)
   }
 
-  toggleMenu = (bool) => {
-    console.log(bool)
+  toggleMenu = bool => {
     this.menuOpen = typeof bool !== 'undefined' && bool || !this.menuOpen
     this.els.menu.style.display = this.menuOpen ? 'block' : 'none'
   }

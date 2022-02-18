@@ -4,3 +4,7 @@
   bottom: 5%;
   left: 5%;
 }
+
+#a11y-assistant button {
+  cursor: pointer;
+}
