@@ -2,7 +2,7 @@
   "name": "a11y-assistant",
   "version": "0.0.0",
   "description": "An accessibility widget",
-  "main": "index.js",
+  "main": "a11y-assistant.min.js",
   "type": "module",
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",

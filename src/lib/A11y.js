@@ -14,10 +14,9 @@ class A11y {
     const menuId = `${PACKAGE_SLUG}-nav`
     const toggleButtonId = `${PACKAGE_SLUG}-toggle-button`
     const highlightLinksButtonId = `${PACKAGE_SLUG}-highlight-links-button`
-
+    
     this.els.styles = document.createElement('style')
     this.els.styles.innerText =  styles
-
     this.els.widget = document.createElement('div')
     this.els.widget.id = `${PACKAGE_SLUG}`
     this.els.widget.innerHTML = `
